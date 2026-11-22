@@ -29,6 +29,7 @@ public class EquipamentoService {
             throw new ConflitoException("Já existe um equipamento com este patrimônio.");
         }
 
+        equipamento.setId(null);
         equipamento.setDisponivel(true);
         return repository.save(equipamento);
     }
