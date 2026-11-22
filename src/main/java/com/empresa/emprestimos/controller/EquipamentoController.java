@@ -3,6 +3,7 @@ package com.empresa.emprestimos.controller;
 import com.empresa.emprestimos.model.Equipamento;
 import com.empresa.emprestimos.model.TipoEquipamento;
 import com.empresa.emprestimos.service.EquipamentoService;
+import com.empresa.emprestimos.dto.CadastroEquipamentoRequest;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
@@ -23,7 +24,13 @@ public class EquipamentoController {
     }
 
     @PostMapping
-    public ResponseEntity<Equipamento> cadastrar(@Valid @RequestBody Equipamento equipamento) {
+    public ResponseEntity<Equipamento> cadastrar(@Valid @RequestBody CadastroEquipamentoRequest request) {
+        Equipamento equipamento = new Equipamento();
+
+        equipamento.setPatrimonio(request.patrimonio());
+        equipamento.setNome(request.nome());
+        equipamento.setTipo(request.tipo());
+
         Equipamento novo = service.cadastrar(equipamento);
         return ResponseEntity.status(201).body(novo);
     }
