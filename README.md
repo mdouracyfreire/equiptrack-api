@@ -405,11 +405,15 @@ A API foi publicada na plataforma **Render**, utilizando Docker.
 
 ## 🎥 Demonstração do projeto
 
-Espaço reservado para o vídeo de apresentação técnica e demonstração das funcionalidades do **EquipTrack API**.
+Confira o vídeo de apresentação técnica e demonstração das funcionalidades do **EquipTrack API**.
 
 <div align="center">
 
-**🎬 Vídeo de demonstração em preparação**
+<a href="https://youtu.be/YWZrAEJaNnA">
+  <img src="https://img.shields.io/badge/▶_Assistir_Demonstração-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Assistir demonstração do projeto"/>
+</a>
+
+<br>
 
 *Apresentação da arquitetura, autenticação JWT e execução das principais operações da API.*
 
